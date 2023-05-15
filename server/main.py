@@ -5,7 +5,7 @@ from fastapi import FastAPI, File, Form, HTTPException, Depends, Body, UploadFil
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.staticfiles import StaticFiles
 from loguru import logger
-
+from dotenv import load_dotenv
 from models.api import (
     DeleteRequest,
     DeleteResponse,
@@ -18,6 +18,9 @@ from datastore.factory import get_datastore
 from services.file import get_document_from_file
 
 from models.models import DocumentMetadata, Source
+
+load_dotenv()
+
 
 bearer_scheme = HTTPBearer()
 BEARER_TOKEN = os.environ.get("BEARER_TOKEN")
