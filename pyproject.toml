@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "chatgpt-retrieval-plugin"
+name = "rapCloudsChatGptPlugin"
 version = "0.1.0"
 description = ""
-authors = ["isafulf <isabella@openai.com>"]
+authors = ["jordanTreDaniel <jordan@rapclouds.com>"]
 readme = "README.md"
 packages = [{include = "server"}]
 
@@ -27,7 +27,7 @@ python-pptx = "^0.6.21"
 python-multipart = "^0.0.6"
 arrow = "^1.2.3"
 chromadb = "^0.3.11"
-pinecone-client = "^2.1.0"
+pinecone-client = "^2.1.0å"
 weaviate-client = "^3.12.0"
 pymilvus = "^2.2.2"
 qdrant-client = {version = "^1.0.4", python = "<3.12"}

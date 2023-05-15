@@ -1760,21 +1760,23 @@ qdrant = ["qdrant-client (>=1.1.2,<2.0.0)"]
 
 [[package]]
 name = "llama-index"
-version = "0.5.4"
-description = "Interface between LLMs and your data."
+version = "0.6.5"
+description = "Interface between LLMs and your data"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "llama_index-0.5.4.tar.gz", hash = "sha256:f6c556370f7f03039bc19be4ca594b00f38d7cea18399f6045bc776fa3a90d15"},
+    {file = "llama_index-0.6.5-py3-none-any.whl", hash = "sha256:adc018ab7a88e44477020f5d9363985822e7c5ebf6cbce75b296ad8f23105b60"},
+    {file = "llama_index-0.6.5.tar.gz", hash = "sha256:f203a2477a48fe36fe0e24c0d16d9ea2735398f908c1c4f2ed36d49eccf49c70"},
 ]
 
 [package.dependencies]
-dataclasses_json = "*"
-langchain = "*"
+dataclasses-json = "*"
+langchain = ">=0.0.154"
 numpy = "*"
 openai = ">=0.26.4"
 pandas = "*"
+requests = "<2.30.0"
 tenacity = ">=8.2.0,<9.0.0"
 tiktoken = "*"
 
