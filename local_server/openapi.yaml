@@ -1,8 +1,7 @@
 openapi: 3.0.2
 info:
-  title: Retrieval Plugin API
-  description: A retrieval API for querying and filtering documents based on natural language queries and metadata
-  version: 1.0.0
+  title: Rap Clouds Chat Plugin API
+  description: A retrieval plugin made for helping users discover what RapClouds is and how to use it!
   servers:
     - url: http://localhost:3333
 paths:
