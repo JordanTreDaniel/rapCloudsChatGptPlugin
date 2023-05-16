@@ -503,14 +503,14 @@ files = [
 
 [[package]]
 name = "chromadb"
-version = "0.3.22"
+version = "0.3.23"
 description = "Chroma."
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "chromadb-0.3.22-py3-none-any.whl", hash = "sha256:54b58e562ab8a63194ce3b453633ce351475193de2184845f0577db969f1cf49"},
-    {file = "chromadb-0.3.22.tar.gz", hash = "sha256:41acb262c2c7bb41afecd50737f440dce3fdaa3d3fe1749d0e4be1ffc8699e63"},
+    {file = "chromadb-0.3.23-py3-none-any.whl", hash = "sha256:c1e04fddff0916243895bedeffc1977745328f62404d70981eb1a0cb9dcdfaf3"},
+    {file = "chromadb-0.3.23.tar.gz", hash = "sha256:87fa922c92e2e90fb48234b435e9d4f0c61646fbd1526062f53f63326fc21228"},
 ]
 
 [package.dependencies]
@@ -1760,14 +1760,14 @@ qdrant = ["qdrant-client (>=1.1.2,<2.0.0)"]
 
 [[package]]
 name = "llama-index"
-version = "0.6.5"
+version = "0.6.7"
 description = "Interface between LLMs and your data"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "llama_index-0.6.5-py3-none-any.whl", hash = "sha256:adc018ab7a88e44477020f5d9363985822e7c5ebf6cbce75b296ad8f23105b60"},
-    {file = "llama_index-0.6.5.tar.gz", hash = "sha256:f203a2477a48fe36fe0e24c0d16d9ea2735398f908c1c4f2ed36d49eccf49c70"},
+    {file = "llama_index-0.6.7-py3-none-any.whl", hash = "sha256:77653db743b146bb510f1149ff7a362f1d2779b7e0c33fc381d8abd32548dee9"},
+    {file = "llama_index-0.6.7.tar.gz", hash = "sha256:872e784450611918a7f1d13d741f241bcb8902370bef70acb6be908406e19e67"},
 ]
 
 [package.dependencies]
