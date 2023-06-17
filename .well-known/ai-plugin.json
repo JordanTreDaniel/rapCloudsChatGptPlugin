@@ -10,10 +10,10 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://rap-clouds-chat-plugin.fly.dev/.well-known/openapi.yaml",
+    "url": "https://rap-clouds-chat-gpt-plugin.fly.dev/.well-known/openapi.yaml",
     "has_user_authentication": false
   },
-  "logo_url": "https://rap-clouds-chat-plugin.fly.dev/.well-known/logo.png",
+  "logo_url": "https://rap-clouds-chat-gpt-plugin.fly.dev/.well-known/logo.png",
   "contact_email": "hello@contact.com", 
   "legal_info_url": "http://example.com/legal-info"
 }

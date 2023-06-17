@@ -1,13 +1,13 @@
-# fly.toml app configuration file generated for rap-clouds-chat-plugin on 2023-06-14T00:18:24-05:00
+# fly.toml app configuration file generated for rap-clouds-chat-gpt-plugin on 2023-06-16T21:35:36-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "rap-clouds-chat-plugin"
+app = "rap-clouds-chat-gpt-plugin"
 primary_region = "dfw"
 
 [http_service]
-  internal_port = 8080
+  internal_port = 4444
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true

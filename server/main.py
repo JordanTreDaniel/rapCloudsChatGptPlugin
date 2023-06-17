@@ -28,6 +28,7 @@ assert BEARER_TOKEN is not None
 
 
 def validate_token(credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme)):
+    print("credentials", credentials)
     if credentials.scheme != "Bearer" or credentials.credentials != BEARER_TOKEN:
         raise HTTPException(status_code=401, detail="Invalid or missing token")
     return credentials
@@ -35,7 +36,7 @@ def validate_token(credentials: HTTPAuthorizationCredentials = Depends(bearer_sc
 
 app = FastAPI(dependencies=[Depends(validate_token)])
 app.mount("/.well-known", StaticFiles(directory=".well-known"), name="static")
-
+print(f"Aye yo Jordan")
 # Create a sub-application, in order to access just the query endpoint in an OpenAPI schema, found at http://0.0.0.0:8000/sub/openapi.json when the app is running locally
 sub_app = FastAPI(
     title="RapClouds Info Retrieval API",
@@ -156,4 +157,14 @@ async def startup():
 
 
 def start():
-    uvicorn.run("server.main:app", host="0.0.0.0", port=8080, reload=True)
+    uvicorn.run("server.main:app", host="0.0.0.0", port=4444, reload=True)
+    if __name__ == "__main__":
+        port = int(os.getenv("PORT", 4444))  # You can set your default port here
+        print(f"Hey Jordan, its running on http://localhost:{port}")
+        uvicorn.run(app, host="0.0.0.0", port=port)
+
+
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 4444))  # You can set your default port here
+    print(f"Hey Jordan, its running on http://localhost:{port}")
+    uvicorn.run(app, host="0.0.0.0", port=port)

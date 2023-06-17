@@ -4,7 +4,7 @@ info:
   description: A plugin api that supports the RapClouds plugin in sharing info about RapClouds!
   version: 1.0.0
   servers:
-    - url: https://rap-clouds-chat-plugin.fly.dev/
+    - url: https://rap-clouds-chat-gpt-plugin.fly.dev
 paths:
   /query:
     post:
