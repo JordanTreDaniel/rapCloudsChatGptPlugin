@@ -13,8 +13,8 @@ secondary = true
 
 [tool.poetry.dependencies]
 python = "^3.10"
-fastapi = "^0.92.0"
-uvicorn = "^0.20.0"
+fastapi = "^0.97.0"
+uvicorn = "^0.22.0"
 openai = "^0.27.5"
 python-dotenv = "^0.21.1"
 pydantic = "^1.10.5"
