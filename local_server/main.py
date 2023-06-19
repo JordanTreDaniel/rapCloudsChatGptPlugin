@@ -4,7 +4,7 @@ from typing import Optional
 import uvicorn
 from fastapi import FastAPI, File, Form, HTTPException, Body, UploadFile
 from loguru import logger
-
+from dotenv import load_dotenv
 from models.api import (
     DeleteRequest,
     DeleteResponse,
@@ -21,7 +21,7 @@ from starlette.responses import FileResponse
 from models.models import DocumentMetadata, Source
 from fastapi.middleware.cors import CORSMiddleware
 
-
+load_dotenv()
 app = FastAPI()
 
 PORT = 3333
@@ -38,6 +38,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.get("/")
+async def jordan():
+    return {"message": "Hello Jordan"}
 
 
 @app.route("/.well-known/ai-plugin.json")
@@ -140,6 +145,7 @@ async def delete(
 
 @app.on_event("startup")
 async def startup():
+    print("Starting up mf'ers")
     global datastore
     datastore = await get_datastore()
 

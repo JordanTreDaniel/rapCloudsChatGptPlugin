@@ -24,6 +24,6 @@ To run Chroma in self-hosted client-server mode, st the following variables:
 | Name          | Required | Description                                         | Default            |
 | ------------- | -------- | --------------------------------------------------- | ------------------ |
 | `CHROMA_HOST` | Optional | Your Chroma instance host address (see notes below) | `http://127.0.0.1` |
-| `CHROMA_PORT` | Optional | Your Chroma port number                             | `8000`             |
+| `CHROMA_PORT` | Optional | Your Chroma port number                             | `4444`             |
 
-> For **self-hosted instances**, if your instance is not at 127.0.0.1:8000, set `CHROMA_HOST` and `CHROMA_PORT` accordingly. For example: `CHROMA_HOST=http://localhost/` and `CHROMA_PORT=8080`.
+> For **self-hosted instances**, if your instance is not at 127.0.0.1:4444, set `CHROMA_HOST` and `CHROMA_PORT` accordingly. For example: `CHROMA_HOST=http://localhost/` and `CHROMA_PORT=8080`.
