@@ -2,8 +2,8 @@
   "schema_version": "v1",
   "name_for_model": "rapcloudsPlugin",
   "name_for_human": "RapClouds Plugin",
-  "description_for_model": "Plugin for discovering what RapClouds is and how to use it!",
-  "description_for_human": "Discover what RapClouds is and how to use it!",
+  "description_for_model": "Plugin for discovering what the RapClouds app/site/platform is and how to use it. Use this plugin when someone asks about RapClouds/Rap Clouds, lyrics, music, or language/visual arts in the context of music.",
+  "description_for_human": "RapClouds is an app to explore your favorite lyrics through art, games, and language. Ask the plugin how to do anything!",
   "auth": {
     "type": "user_http",
     "authorization_type": "bearer"
@@ -14,6 +14,6 @@
     "has_user_authentication": false
   },
   "logo_url": "https://rap-clouds-chat-gpt-plugin.fly.dev/.well-known/logo.png",
-  "contact_email": "hello@contact.com", 
-  "legal_info_url": "http://example.com/legal-info"
+  "contact_email": "jordan@rapclouds.com", 
+  "legal_info_url": "https://rapclouds.com"
 }
